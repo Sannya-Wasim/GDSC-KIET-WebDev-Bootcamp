@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" style="border: 2px solid gray; margin: 10px; padding: 10px">
+      Your Details
+      <br />
+      <p>Name : <input type="text" /></p>
+      <p>Email : <input type="text" /></p>
+    </form>
+
+    <form action="" style="border: 2px solid gray; margin: 10px; padding: 10px">
+      Your Review
+      <br />
+      <p>
+        How did you hear about us?
+        <select name="Media">
+          <option value="Google">Google</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Linkedin">Linkedin</option>
+        </select>
+      </p>
+      <p>
+        Would you visit again?
+        <br />
+        <input type="radio" name="answer" id="Yes" /><label for="Yes">Yes</label
+        ><br />
+        <input type="radio" name="answer" id="No" /><label for="No">No</label
+        ><br />
+        <input type="radio" name="answer" id="Maybe" /><label for="Maybe"
+          >Maybe</label
+        ><br />
+      </p>
+
+      <p>Comments <textarea name="comment" cols="30" rows="4"></textarea></p>
+      <p>
+        <input type="checkbox" name="updates" />Sign me up for email updates
+      </p>
+      <button>Submit Review</button>
+    </form>
+  </body>
+</html>
