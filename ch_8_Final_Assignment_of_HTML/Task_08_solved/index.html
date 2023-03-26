@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1170px )"
+      href="css/phone.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div id="logo">
+        <img src="img/logo.png" alt="Pic not found" />
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#buy">Buy Now</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#">Lost & Found</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <div class="home-section">
+        <h1 class="h-primary">Welcome to my Pet Shop!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis
+          tempora eos, totam corrupti consequatur facilis provident eum
+          laudantium ex!Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Fuga quod, deserunt animi illo ea dolorum voluptatibus eveniet
+          possimus culpa nam
+        </p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h1 class="h-primary">What We Offer</h1>
+      <div class="services-section">
+        <div class="containers">
+          <h2 class="h-secondary">Pets</h2>
+          <img src="img/logo1.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            consequatur aliquid nihil soluta eum, voluptas esse a sed libero
+            enim commodi quas nobis itaque error sequi facilis minus aspernatur
+            ex quos officia illo cumque.
+          </p>
+        </div>
+
+        <div class="containers">
+          <h2 class="h-secondary">Food</h2>
+          <img src="img/logo2.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            consequatur aliquid nihil soluta eum, voluptas esse a sed libero
+            enim commodi quas nobis itaque error sequi facilis minus aspernatur
+            ex quos officia illo cumque.
+          </p>
+        </div>
+
+        <div class="containers">
+          <h2 class="h-secondary">Lost & Found</h2>
+          <img src="img/logo3.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            consequatur aliquid nihil soluta eum, voluptas esse a sed libero
+            enim commodi quas nobis itaque error sequi facilis minus aspernatur
+            ex quos officia illo cumque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="purchase">
+      <h1 class="h-primary">Give home to these pure souls</h1>
+      <div class="purchase-section">
+        <ul>
+          <li><img src="img/cats.png" alt="Image not Found" /></li>
+          <li><img src="img/dogs.png" alt="Image not Found" /></li>
+          <li><img src="img/parrot.png" alt="Image not Found" /></li>
+          <li><img src="img/fish.png" alt="Image not Found" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="food">
+      <h1 class="h-primary">Premium Quality Feed</h1>
+      <div class="food-section">
+        <ul>
+          <li><img src="img/food1.png" alt="Image not Found" /></li>
+          <li><img src="img/food2.png" alt="Image not Found" /></li>
+          <li><img src="img/food3.png" alt="Image not Found" /></li>
+          <li><img src="img/food4.png" alt="Image not Found" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="search">
+      <h1 class="h-primary">Lost & Found Query</h1>
+      <div id="search-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your Name" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              name="phone"
+              placeholder="Enter your Phone Number"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="details">Details</label>
+            <textarea name="details" id="" cols="30" rows="10">
+Enter Details</textarea
+            >
+          </div>
+
+          <div class="form-group">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" style="background-color: rgb(241, 214, 177)">
+      <form
+        action=""
+        style="border: 2px solid gray; margin: 10px; padding: 10px"
+      >
+        Your Details
+        <br />
+        <p>Name : <input type="text" /></p>
+        <p>Email : <input type="text" /></p>
+      </form>
+
+      <form
+        action=""
+        style="border: 2px solid gray; margin: 10px; padding: 10px"
+      >
+        Your Review
+        <br />
+        <p>
+          How did you hear about us?
+          <select name="Media">
+            <option value="Google">Google</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Linkedin">Linkedin</option>
+          </select>
+        </p>
+        <p>
+          Would you visit again?
+          <br />
+          <input type="radio" name="answer" id="Yes" /><label for="Yes"
+            >Yes</label
+          ><br />
+          <input type="radio" name="answer" id="No" /><label for="No">No</label
+          ><br />
+          <input type="radio" name="answer" id="Maybe" /><label for="Maybe"
+            >Maybe</label
+          ><br />
+        </p>
+
+        <p>Comments <textarea name="comment" cols="30" rows="4"></textarea></p>
+        <p>
+          <input type="checkbox" name="updates" />Sign me up for email updates
+        </p>
+        <button>Submit Review</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="center">
+        Copyright &copy; www.Pet_Shop.com All rights reserved!
+      </div>
+    </footer>
+  </body>
+</html>

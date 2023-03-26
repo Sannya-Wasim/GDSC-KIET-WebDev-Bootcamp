@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/index_style.css">
+    <link rel="stylesheet" href="./styles/modal_style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="header">
+        <img class="icon" src="./images/icons/mail.png">
+        <p>customercare@traveltriangle.com</p></img>
+        <p>|</p>
+        <img class="icon" src="./images/icons/call.png">
+        <p>111-222-333</p></img>
+        <div class="services-list"><img class="icon" style="width : 20%; height : 20%" src="./images/icons/list.png"><br>List your services for free</div>
+    </section>
+
+    <!-- Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active banner">
+                <img src="./images/carousel_image_01.jpg" class="d-block w-100 c-img" alt="...">
+
+                <div class="carousel-caption d-none d-md-block top-0">
+                    <!-- Navbar -->
+                    <div class="navbar d-flex mb-4 top-0">
+                        <div class="logo p-2 me-auto">
+                            <h2>Event Management</h2>
+                        </div>
+                        <div class="nav-buttons p-2">
+                            <button type="button" class="btn btn-dark" id="signup_btn">Sign Up</button>
+                            <button type="button" class="btn btn-dark" id="signin_btn">Sign In</button>
+                        </div>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="fw-bold">Give Your Events a Royal Look</h1>
+                    <button type="button" class="btn btn-dark mt-4">See How it Works</button>
+                    <div class="input-div mt-4">
+                        <input type="text" placeholder="Search Location">
+                        <input type="text" placeholder="Search Services">
+                        <button type="button" class="btn btn-dark">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item banner">
+                <img src="./images/carousel_image_02.jpg" class="d-block w-100 c-img" alt="...">
+
+                <div class="carousel-caption d-none d-md-block top-0">
+                    <!-- Navbar -->
+                    <div class="navbar d-flex mb-4 top-0">
+                        <div class="logo p-2 me-auto">
+                            <h2>Event Management</h2>
+                        </div>
+                        <div class="nav-buttons p-2">
+                            <button type="button" class="btn btn-dark" id="signup_btn">Sign Up</button>
+                            <button type="button" class="btn btn-dark" id="signin_btn">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item banner">
+                <img src="./images/carousel_image_03.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-none d-md-block top-0">
+
+                    <!-- Navbar -->
+                    <div class="navbar d-flex mb-4 top-0">
+                        <div class="logo p-2 me-auto">
+                            <h2>Event Management</h2>
+                        </div>
+                        <div class="nav-buttons p-2">
+                            <button type="button" class="btn btn-dark" id="signup_btn">Sign Up</button>
+                            <button type="button" class="btn btn-dark" id="signin_btn">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal_content" id="SignUp_Modal">
+        <span class="signup_close">&times;</span>
+        <div class="modal_header">
+            <h3>Sign Up</h3>
+        </div>
+        <div class="modal_body">
+            <input type="Name" placeholder="Enter your name"><br>
+            <input type="email" placeholder="Enter your email"><br>
+            <input type="text" placeholder="Enter your password"><br>
+            <button>Sign Up</button>
+        </div>
+    </div>
+    <script src="./js/signup.js"></script>
+
+    <!-- Sign In Modal -->
+    <div class="modal_content" id="SignIn_Modal">
+        <span class="signin_close">&times;</span>
+        <div class="modal_header">
+            <h3>Sign In</h3>
+        </div>
+        <div class="modal_body">
+            <input type="email" placeholder="Enter your email"><br>
+            <input type="text" placeholder="Enter your password"><br>
+
+            <button>Sign In</button>
+        </div>
+    </div>
+
+    <script src="./js/signin.js"></script>
+
+    <!-- Services Section -->
+    <div class="services-container">
+        <h2 class="mt-4 text-center">Our Best Services For You</h2>
+        <br>
+        <div class="container marketing cards mt-4 service-cards">
+
+            <!-- First Row of Cards Section -->
+            <div class="row text-center">
+
+                <div class="col-lg-3 rounded-card">
+                    <img src="./images/party_hall.jpg" alt="">
+                    <h3>Party Halls</h3>
+                    <p>33 Events | 15 Service Providers</p>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-3 rounded-card">
+                    <img src="./images/salons.jpg" alt="">
+                    <h3>Salons</h3>
+                    <p>33 Events | 15 Service Providers</p>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-3 rounded-card">
+                    <img src="./images/catering_services.jpg" alt="">
+                        <h3>Catering Services</h3>
+                        <p>33 Events | 15 Service Providers</p>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-3 rounded-card">
+                    <img src="./images/dress_designer.jpg" alt="">
+                    <h3>Dress Designers</h3>
+                    <p>33 Events | 15 Service Providers</p>
+                </div><!-- /.col-lg-4 -->
+
+            </div><!-- /.row -->
+
+            <!-- Second Row of Cards Section-->
+            <br>
+            <div class="row text-center">
+
+                <div class="col-lg-3 rounded-card">
+                    <img src="./images/event_organizer.jpg" alt="">
+                    <h3>Event Organizers</h3>
+                    <p>33 Events | 15 Service Providers</p>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-3 rounded-card">
+                    <img src="./images/stage_decoration.jpeg" alt="">
+                    <h3>Stage Decoration</h3>
+                    <p>33 Events | 15 Service Providers</p>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-3 rounded-card">
+                    <img src="./images/lighting_decoration.jpg" alt="">
+                    <h3>Lighting Decoration</h3>
+                    <p>33 Events | 15 Service Providers</p>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-3 rounded-card">
+                    <img src="./images/rent_car.jpg" alt="">
+                    <h3>Rent A Car</h3>
+                    <p>33 Events | 15 Service Providers</p>
+                </div><!-- /.col-lg-4 -->
+
+            </div><!-- /.row -->
+        </div>
+
+        <!-- Booking Section -->
+        <div class="booking-section">
+            <h2 class="mt-4 text-center">How To Book Our Services?</h2>
+            <div class="booking-container">
+                <div class="booking-cards">
+                    <div class="row text-center">
+
+                        <div class="col-lg-3">
+                            <div class="rounded-card-icon m-auto mb-2"><img class="mt-4" src="./images/icons/search.png" alt=""></div>
+                            <h4>Search Services</h4>
+                            <p>Search, review, shortlist and share the best Banquet Halls, Party Halls, Party Halls near
+                                you.</p>
+                        </div><!-- /.col-lg-4 -->
+
+                        <div class="col-lg-3">
+                            <div class="rounded-card-icon m-auto mb-2"><img class="mt-4" src="./images/icons/dollar.png" alt=""></div>
+                            <h4>Request Quote</h4>
+                            <p>Get multiple competin gfree quotes from Banquet Hall and Party Hall Owners</p>
+                        </div><!-- /.col-lg-4 -->
+
+                        <div class="col-lg-3">
+                            <div class="rounded-card-icon m-auto mb-2"><img class="mt-3" src="./images/icons/quote.png" alt=""></div>
+                            <h4>Book a Service</h4>
+                            <p>Select a quote that best fits your needs and book or reserve a Banquet Hall of your
+                                choice.</p>
+                        </div><!-- /.col-lg-4 -->
+
+                    </div><!-- /.row -->
+                </div>
+                <div class="booking-video">
+                    <h4 mt-4 text-center>Watch Video</h4>
+                    <div class="video"><img src="" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Users Section -->
+        <div class="users mt-2 p-4"><br><br>
+            <div class="user-left">
+                <div class="user-cards">
+                    <div class="row text-center">
+
+                        <div class="col-lg-5  p-4 mt-4">
+                            <div class="rounded-card-icon m-auto mb-2"><img class="mt-4" src="./images/icons/customers.png" alt=""></div>
+                            <h4>For Customers</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam accusantium
+                                temporibus id architecto corporis praesentium itaque. Pariatur a sunt neque laboriosam
+                                ducimus veniam! Voluptas, ad? Iure cum, quis illum enim consequuntur consequatur dolorum
+                                ullam et aperiam rerum, illo vero corporis laudantium dolore fugit, nobis ipsum
+                                repudiandae ut aliquid nulla.</p>
+                        </div><!-- /.col-lg-4 -->
+
+                        <div class="col-lg-5  p-4 mt-4">
+                            <div class="rounded-card-icon m-auto mb-2"><img class="mt-4" src="./images/icons/owner.png" alt=""></div>
+                            <h4>For Venue Owners</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam accusantium
+                                temporibus id architecto corporis praesentium itaque. Pariatur a sunt neque laboriosam
+                                ducimus veniam! Voluptas, ad? Iure cum, quis illum enim consequuntur consequatur dolorum
+                                ullam et aperiam rerum, illo vero corporis laudantium dolore fugit, nobis ipsum
+                                repudiandae ut aliquid nulla.</p>
+                        </div><!-- /.col-lg-4 -->
+                    </div><!-- /.row -->
+                </div>
+            </div>
+            <div class="user-right">
+                <div class="comments">
+                    <div class="row text-center">
+                        <div class="col p-4">
+                            <h2 class="mb-4">Love In Comments</h2>
+                            <svg class="bd-placeholder-img rounded-circle mt-4" width="100" height="100"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#FFACC7" /><text x="50%" y="50%" fill="#FFACC7"
+                                    dy=".3em">140x140</text>
+                            </svg>
+                            <h4 class="mt-4">Neelam Muneer</h4>
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam accusantium
+                                temporibus id architecto corporis praesentium itaque. Pariatur a sunt neque laboriosam
+                                ducimus veniam! Voluptas, ad? Iure cum, quis illum enim consequuntur consequatur dolorum
+                                ullam et aperiam rerum, illo vero corporis laudantium dolore fugit, nobis ipsum
+                                repudiandae ut aliquid nulla."</p>
+                        </div><!-- /.col-lg-4 -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-container">
+            <div class="footer-section d-flex">
+                <div class="footer-left p-2">
+                    <ul class="d-flex">
+                        <li class="p-1">
+                            <h5>Connect with us on: </h5>
+                        </li>
+                        <li><img class="icon p-2" src="./images/icons/facebook.png"></li>
+                        <li><img class="icon p-2" src="./images/icons/twitter.png"></li>
+                        <li><img class="icon p-2" src="./images/icons/instagram.png"></li>
+                        <li><img class="icon p-2" src="./images/icons/google.png"></li>
+                        <li><img class="icon p-2" src="./images/icons/pinterest.png"></li>
+                    </ul>
+                </div>
+
+                <div class="footer-right d-flex">
+                    <p class="p-2 mt-1"><img class="icon">111-222-333</p>
+                    <p class="p-2 mt-1"><img class="icon">customercare@eventmanagement.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="p-3">All rights reserved &copy; 2017</p>
+            </div>
+
+        </div>
+</body>
+
+</html>

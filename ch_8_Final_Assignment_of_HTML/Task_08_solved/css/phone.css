@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+.navbar {
+    flex-direction: column;
+}
+
+/* .navbar::before {
+    height: 70%;
+} */
+
+/* .navbar ul {
+    flex-direction: row;
+    margin: 10px;
+} */
+
+.navbar ul li a{
+    font-size: 10px;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+
+/* Home section */
+#home {
+    height: 280px; 
+    padding: 0px 9px;
+}
+
+#home::before {
+    height: 370px;
+}
+#home p {
+    font-size: 13px;
+
+}
+
+.home-section {
+    top: 27px;
+}
+
+/* Services Section */
+#services {
+    flex-direction: column;
+}
+
+.services-section  {
+    flex-direction: column;
+}
+
+/* Purchase Section */
+.purchase-section ul{
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Food Section */
+.food-section ul{
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Search Section */
+#search-box {
+    flex-direction: column;
+}
+
+#search-box form {
+    width: 70%;
+}
+
+/* Footer Section */
+.center {
+    font-size: small;
+}
